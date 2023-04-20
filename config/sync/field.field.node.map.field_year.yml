@@ -1,0 +1,23 @@
+uuid: 6de541e8-7b68-4fbc-879d-fad995d871e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year
+    - node.type.map
+id: node.map.field_year
+field_name: field_year
+entity_type: node
+bundle: map
+label: Year
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1800
+  max: 2100
+  prefix: ''
+  suffix: ''
+field_type: integer

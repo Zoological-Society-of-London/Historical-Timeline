@@ -1,0 +1,24 @@
+{{ attach_library('core/drupal') }}
+{{ attach_library('core/drupal.ajax') }}
+
+<main class="grid primary-grid">
+	<section class="map-wrapper">
+
+		<div id="map"></div>
+		<div id="toggleTime" class="zsl-map-control-button" onclick="window.timeline.toggleTime()"><i class="fa-duotone fa-calendar-clock"></i></div>
+		<div id="toggleFullScreen" class="zsl-map-control-button" onclick="window.timeline.toggleFullScreen()"><i class="fa-duotone fa-expand"></i></div>
+		<div class="date-selector-wrapper">
+			<div class="date-selector">
+			<i class="fa fa-arrow-up spinner-arrow spinner-arrow--up" aria-hidden="true" onclick="window.timeline.goBack()"></i>
+			<i class="fa fa-arrow-down spinner-arrow spinner-arrow--down" aria-hidden="true" onclick="window.timeline.goForward()"></i>
+				<div id="map-picker"></div>
+			</div>
+		</div>
+	</section>
+	<section id="main-sidebar" class="sidebar happy-padding flex-column">
+        
+        {# Contents replaced by JavaScript #}
+
+	</section>
+
+</main>

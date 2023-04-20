@@ -1,0 +1,87 @@
+// ZSL Official Colours
+
+$gecko: #7ac143; /*rgb(122, 194, 66) */
+$seagrass: #008c46; /*rgb(0,140,70) */
+$tiger: #ed7a23; /* rgb(237, 122, 35) */
+$ocean: #004eff; /* rgb(0, 78, 255) */
+$parakeet: #c7f700;  /* rgb(199, 247, 0) */
+$arcticwhite: #ffffff; /* rgb(255,255,255) */
+$blackbear: #000000; /*rgb(0,0,0) */
+$redpanda: #bd0c00; /*rgb() */
+$honeybee: #ffd200; /*rgb() */
+$peacock: #0000aa; /*rgb() */
+$sky: #00deff; /*rgb() */
+$butterfly: #800a6a; /*rgb() */
+$flamingo: #ec008c; /*rgb() */
+$salmon: #ff8dd3; /*rgb() */
+
+$primary: $gecko; /* rgb(122, 194, 66) */
+$primary80-transparent: rgba(122, 194, 66, 0.8);
+$primary60-transparent: rgba(122, 194, 66, 0.6);
+$primary40-transparent: rgba(122, 194, 66, 0.4);
+$primary20-transparent: rgba(122, 194, 66, 0.2);
+
+$secondary: $seagrass; /*rgb(0,140,70) */
+$secondary80-transparent: rgba(0, 140, 70, 0.8);
+$secondary60-transparent: rgba(0, 140, 70, 0.6);
+$secondary40-transparent: rgba(0, 140, 70, 0.4);
+$secondary20-transparent: rgba(0, 140, 70, 0.2);
+
+$grey10: hsl(0, 0%, 90%); /* rgb(230, 230, 230) */
+$grey40: hsl(0, 0%, 60%); /* rgb(153, 153, 153) */
+$grey60: hsl(0, 0%, 40%);
+$grey70: hsl(0, 0%, 30%); /* rgb(77, 77, 77) */
+$grey10-transparent: rgba(0, 0, 0, 0.1); 
+$grey40-transparent: rgba(0, 0, 0, 0.4); 
+$grey70-transparent: rgba(0, 0, 0, 0.7);
+
+
+// Shorthands for colors
+$primary: $gecko; /* rgb(122, 194, 66) */
+$secondary: $seagrass; /*rgb(0,140,70) */
+$white: $arcticwhite;
+$black: $blackbear;
+$green: $seagrass;
+$blue: $ocean;
+$red: $redpanda; 
+$yellow: $honeybee; 
+$grey: $grey40;
+
+
+
+// Font Families
+
+
+// Font weights
+$thin: 100;
+$light: 300;
+$normal: 400;
+$medium: 500;
+$boldish: 600;
+$bold: 700;
+
+// Font sizes
+// 10px -> 14px
+$font-small: 0.8rem;
+// 15px -> 18px
+$font-base: 1rem;
+// 19px ->23px
+$font-medium: 1.375rem;
+// 24px
+$font-24px: 1.5rem;
+// 25px -> 28px
+$font-big: 1.6rem;
+$font-32px: 2rem;
+// 33px -> 42px
+$font-veryBig: 2.5rem;
+// 50px -> 70px
+$font-huge: 3.75rem;
+
+
+
+
+$happy-dimension: 1rem;
+
+@media screen and (min-width: 900px) {
+    $happy-dimension: 1.5rem;
+}

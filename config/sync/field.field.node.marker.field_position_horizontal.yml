@@ -1,0 +1,25 @@
+uuid: 2f576468-09cf-425b-8b68-66ebd64ac2ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_position_horizontal
+    - node.type.marker
+id: node.marker.field_position_horizontal
+field_name: field_position_horizontal
+entity_type: node
+bundle: marker
+label: 'Position horizontal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: !!float 50
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

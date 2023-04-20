@@ -1,0 +1,5 @@
+services:
+  historical_timeline.twig_general_helpers:
+    class: Drupal\historical_timeline\TwigExtension\TwigGeneralHelpers
+    tags:
+      - { name: twig.extension }

@@ -1,0 +1,8 @@
+name: Historical Timeline
+type: theme
+base theme: classy
+description: 'Historical Timeline Built for ZSL London Zoo by Octophin Digital'
+core_version_requirement: ^9 
+libraries:
+  - historical_timeline/global-styling
+  - historical_timeline/global-scripts

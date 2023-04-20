@@ -1,0 +1,32 @@
+uuid: 98681a64-b5bd-42c1-a64d-68cf189e2b0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.marker.field_description
+    - field.field.node.marker.field_map
+    - field.field.node.marker.field_marker_icon
+    - field.field.node.marker.field_marker_type
+    - field.field.node.marker.field_position_horizontal
+    - field.field.node.marker.field_position_vertical
+    - node.type.marker
+  module:
+    - user
+id: node.marker.teaser
+targetEntityType: node
+bundle: marker
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_description: true
+  field_map: true
+  field_marker_icon: true
+  field_marker_type: true
+  field_position_horizontal: true
+  field_position_vertical: true

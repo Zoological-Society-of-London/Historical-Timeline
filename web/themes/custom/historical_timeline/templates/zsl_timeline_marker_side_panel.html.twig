@@ -1,0 +1,34 @@
+<button class="sidebar-toggle-button" onclick="window.timeline.toggleSidebar();">
+	<span class="toggle-text--info">
+		<span>Show info</span>
+		<i class="fad fa-book-reader"></i>
+	</span>
+	<span class="toggle-text--map">
+		<span>Show map</span>
+		<i class="fad fa-map-marked-alt"></i>
+	</span>
+</button>
+<div class="sidebar__inner flex-1-1" id="side-panel">
+	<div class="breadcrumbs">
+
+		{% for link in content_vars.header_links %}
+			<a class="{{link.class}}" onclick="{{link.onclick}}">{{link.label}}</a>
+		{% endfor %}
+	{# Quiz button #}
+	{# {% for link in content_vars.footer_links %}
+		<button class="{{link.class}}" onclick="{{link.onclick}}">{{link.label}}</button>
+	{% endfor %} #}
+	</div>
+
+	<h2 class="font32-27">{{content_vars.title}}</h2>
+
+	<div class="content-nav-buttons-wrapper">
+		{% for link in content_vars.navigation_links %}
+			<button class="{{link.class}}" onclick="{{link.onclick}}">{{link.label}}</button>
+		{% endfor %}
+	</div>
+	
+	<div class="clearfix text-formatted field field--name-field-description field--type-text-long field--label-hidden field__item">
+		<p>{{content_vars.content}}</p>
+	</div>
+</div>

@@ -1,0 +1,12 @@
+uuid: 693754a0-67b5-4a41-9dfe-1b5b7cd4155b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: skfrgCS5JC2HXCG6QfQfiuuFWy_-OQ5Qs0FvaPwc6Vc
+id: private_files
+label: 'Private Files Directory'
+type: DrupalFiles
+config:
+  name: 'Private Files Directory'
+  directory: 'private://'

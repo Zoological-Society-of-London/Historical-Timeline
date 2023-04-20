@@ -1,0 +1,22 @@
+uuid: ab2ef1ea-65a4-45cf-9cf9-19fad0ad36ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - historical_timeline
+_core:
+  default_config_hash: aeqlWs7HwctZeZC7ADcbxfqehJzBRfZKmuZz3DsH3_4
+id: historical_timeline_messages
+theme: historical_timeline
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

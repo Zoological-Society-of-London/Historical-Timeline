@@ -1,0 +1,29 @@
+uuid: 1d0e9750-fd13-48bc-a55c-77399f1083ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_markers
+    - node.type.marker
+    - node.type.theme
+id: node.theme.field_markers
+field_name: field_markers
+entity_type: node
+bundle: theme
+label: Markers
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      marker: marker
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

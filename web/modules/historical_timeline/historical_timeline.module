@@ -1,0 +1,57 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Historical Timeline module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function historical_timeline_theme()
+{
+    return [
+         'historical_timeline' => [
+            'variables' => [
+                'test_var' => NULL
+            ]
+        ],
+
+        'historical_timeline_quiz' => [
+            'template' => 'historical_timeline_quiz',
+            'variables' => [
+                'quiz' => NULL
+            ]
+        ],
+
+        'historical_timeline_marker_side_panel' => [
+            'template' => 'historical_timeline_marker_side_panel',
+            'path' => 'themes/custom/historical_timeline/templates',
+            'variables' => [
+                'content_vars' => null
+            ],
+        ]
+
+    ];
+}
+
+
+
+
+
+
+function historical_timeline_preprocess_html(&$variables)
+{
+    $variables['#attached']['drupalSettings']['path']['themeUrl'] = \Drupal::theme()->getActiveTheme()->getPath();
+
+    // config pages data into drupalSettings for JS
+
+    $myConfigPage = \Drupal\config_pages\Entity\ConfigPages::config('welcome_settings');
+    if (!empty($myConfigPage)) {
+        $variables['#attached']['drupalSettings']['config']['welcome_settings']['field_welcome_title'] = $myConfigPage->get('field_welcome_title')->value;
+        $variables['#attached']['drupalSettings']['config']['welcome_settings']['field_welcome_body'] = $myConfigPage->get('field_welcome_body')->value;
+    } else {
+        $variables['#attached']['drupalSettings']['config']['welcome_settings']['field_welcome_title'] = "Config Not Set";
+        $variables['#attached']['drupalSettings']['config']['welcome_settings']['field_welcome_body'] = "Config Not Set";
+    }
+}

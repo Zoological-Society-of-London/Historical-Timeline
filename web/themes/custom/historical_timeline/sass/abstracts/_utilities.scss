@@ -1,0 +1,278 @@
+// Helpers
+
+.border-radius-10 {
+  border-radius: 10px;
+}
+
+.background-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.hidden {
+  display: none;
+}
+.underline {
+  text-decoration: underline;
+}
+
+// Rounded images
+.round-img {
+  border-radius: 50%;
+}
+
+.float-left{
+  float: left;
+}
+
+.float-right{
+  float: right;
+}
+
+.clearfix{
+  clear: both;
+}
+
+.image-background{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+
+// Layouts 
+.inline{
+  display: inline;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.block{
+  display: block;
+}
+
+.inner{
+  max-width: 75rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.width-reading{
+  width: 43.73rem;
+}
+
+.width-wide-reading,
+.article-body--width-restricted .field--name-body >*{
+  max-width: 50.125rem;
+  width: 100%;
+  margin-right: auto;
+}
+
+.width60{
+  width: 60rem;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.full-width{
+  width: 100%;
+}
+
+
+
+@include for-tablet-landscape-up{
+  .width50-desktop{
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .width60-desktop{
+    width: 60%;
+    max-width: 60%;
+  }
+
+  .width40-desktop{
+    width: 40%;
+    max-width: 40%;
+  }
+
+  .width70-desktop{
+    width: 70%;
+    max-width: 70%;
+  }
+}
+
+
+hr{
+  border-style: solid;
+  border-color: currentColor;
+
+  &.hr-50{
+    width: 50%;
+  }
+
+  &.hr-85{
+    width: 85%;
+  }
+
+  &.dotted{
+    border: none;
+    border-top: dotted 0.5rem currentColor;
+  }
+}
+
+
+.spacer{
+  width: 100%;
+  height: 3rem;
+  @include for-tablet-portrait-up{
+    height: 6rem;
+  }
+  @include for-tablet-landscape-up{
+    height: 10rem;
+  }
+}
+
+
+
+
+
+// Flex
+
+.flex,
+.flex-column{
+  display: flex;
+
+  @include for-phone-only{
+    &.column-mob{
+      flex-direction: column;
+    }
+    &.rev-column-mob{
+      flex-direction: column-reverse;
+    }
+  }
+
+  @include for-tablet-landscape-down{
+    &.column-tablet{
+      flex-direction: column;
+    }
+    &.rev-column-tablet{
+      flex-direction: column-reverse;
+    }
+  }
+
+  @include for-tablet-landscape-up{
+    &.row-reverse-desktop{
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.flex-row {
+  @include flex-row;
+}
+
+.flex-column {
+  @include flex-column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-1-1 {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.flex-1-1{
+  flex: 1 1;
+}
+.flex-0-0{
+  flex: 0 0;
+}
+
+.flex-2-1{
+  flex: 2 1;
+}
+
+
+
+
+
+
+// Grid
+.base-grid {
+  @include basic-grid;
+}
+
+
+
+
+
+
+// Spacing
+
+.happy-margin{
+  margin: 1rem;
+}
+
+.happy-margin-vertical{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.happy-margin-top{
+  margin-top: 1rem;
+}
+
+.happy-margin-bottom{
+  margin-bottom: 1rem;
+}
+
+.horizontal-auto-margin{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.happy-padding {
+  padding: $happy-dimension;
+}
+
+.happy-padding-vertical {
+  padding-top: $happy-dimension;
+  padding-bottom: $happy-dimension;
+}
+
+.happy-padding-horizontal {
+  padding-left: $happy-dimension;
+  padding-right: $happy-dimension;
+}
+
+.happy-middle {
+  margin-left: auto;
+  margin-right: auto;
+}
+

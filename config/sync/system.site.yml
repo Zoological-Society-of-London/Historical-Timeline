@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: l58O_yEXSo-SeJi19LXdzTU1tNJG3lmnIhCitRkM1tk
+langcode: en
+uuid: ded0c912-0035-4c5d-81af-fefb83b2eb1b
+name: 'Historical Timeline'
+mail: admin@octophin.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /timeline
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

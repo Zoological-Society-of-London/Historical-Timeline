@@ -1,0 +1,20 @@
+uuid: 74fb2789-c8a0-4079-bebd-a501f80face4
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_marker_icon
+field_name: field_marker_icon
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

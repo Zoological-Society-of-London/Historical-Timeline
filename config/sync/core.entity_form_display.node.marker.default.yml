@@ -1,0 +1,83 @@
+uuid: 25b6f1e1-55ae-428a-a802-1b0638132b09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.marker.field_description
+    - field.field.node.marker.field_map
+    - field.field.node.marker.field_marker_icon
+    - field.field.node.marker.field_marker_type
+    - field.field.node.marker.field_position_horizontal
+    - field.field.node.marker.field_position_vertical
+    - node.type.marker
+  module:
+    - media_library
+    - path
+    - text
+id: node.marker.default
+targetEntityType: node
+bundle: marker
+mode: default
+content:
+  field_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_map:
+    type: options_buttons
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_marker_icon:
+    type: media_library_widget
+    weight: 3
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_position_horizontal:
+    type: number
+    weight: 6
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_position_vertical:
+    type: number
+    weight: 5
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_marker_type: true
+  promote: true
+  sticky: true
+  uid: true

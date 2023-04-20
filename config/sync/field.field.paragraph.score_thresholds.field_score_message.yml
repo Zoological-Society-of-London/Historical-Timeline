@@ -1,0 +1,21 @@
+uuid: e91c3994-e802-4dcb-b025-9a606ee5aaa9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_score_message
+    - paragraphs.paragraphs_type.score_thresholds
+  module:
+    - text
+id: paragraph.score_thresholds.field_score_message
+field_name: field_score_message
+entity_type: paragraph
+bundle: score_thresholds
+label: 'Score Message'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

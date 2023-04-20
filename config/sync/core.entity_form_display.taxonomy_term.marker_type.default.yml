@@ -1,0 +1,32 @@
+uuid: c29d240a-7e67-4f40-8ba8-7c79e0502342
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.marker_type.field_marker_colour
+    - taxonomy.vocabulary.marker_type
+  module:
+    - color_field
+id: taxonomy_term.marker_type.default
+targetEntityType: taxonomy_term
+bundle: marker_type
+mode: default
+content:
+  field_marker_colour:
+    type: color_field_widget_html5
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true
+  status: true

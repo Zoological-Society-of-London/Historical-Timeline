@@ -1,0 +1,10 @@
+uuid: 65128ba3-bf9b-4d91-a27b-9136dd2ff2ae
+langcode: en
+status: true
+dependencies: {  }
+id: quiz_item
+label: 'Quiz Item'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

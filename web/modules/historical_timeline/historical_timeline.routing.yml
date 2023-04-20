@@ -1,0 +1,64 @@
+historical_timeline.settings_form:
+  path: '/admin/config/system/zsl-timeline'
+  defaults:
+    _title: 'Historical Timeline settings'
+    _form: 'Drupal\historical_timeline\Form\SettingsForm'
+  requirements:
+    _permission: 'administer historical_timeline configuration'
+
+historical_timeline.get_data:
+  path: '/api/get_data'
+  defaults:
+    _title: 'Gets a marker'
+    _controller: '\Drupal\historical_timeline\Controller\TimelineController::get_data'
+  requirements:
+    _permission: 'access content' 
+
+historical_timeline.timeline:
+  path: '/timeline'
+  defaults:
+    _title: 'Timeline'
+    _controller: '\Drupal\historical_timeline\Controller\TimelineController::timeline'
+  requirements:
+    _permission: 'access content' 
+
+historical_timeline.load_marker_panel:
+  path: '/api/load-marker/{marker}/{current_theme}'
+  methods: [GET, POST]
+  defaults:
+    _title: 'Timeline'
+    _controller: '\Drupal\historical_timeline\Controller\TimelineController::load_marker_panel'
+  requirements:
+    _permission: 'access content' 
+  options:
+    parameters:
+      marker:
+        type: entity:node
+      current_theme:
+        type: entity:node
+historical_timeline.load_quiz_modal:
+  path: '/api/load-quiz/{quiz}'
+  methods: [GET, POST]
+  defaults:
+    _title: 'Quiz'
+    _controller: '\Drupal\historical_timeline\Controller\TimelineController::load_quiz_modal'
+  requirements:
+    _permission: 'access content' 
+  options:
+    parameters:
+      quiz:
+        type: entity:node
+historical_timeline.load_score_modal:
+  path: '/api/quiz/{quiz}/{score}'
+  methods: [GET, POST]
+  defaults:
+    _title: 'Quiz score'
+    _controller: '\Drupal\historical_timeline\Controller\TimelineController::load_score_modal'
+  requirements:
+    _permission: 'access content' 
+  options:
+    parameters:
+      quiz:
+        type: entity:node
+      score:
+        type: integer

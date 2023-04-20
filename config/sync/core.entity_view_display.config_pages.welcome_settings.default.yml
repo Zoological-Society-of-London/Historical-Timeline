@@ -1,0 +1,53 @@
+uuid: caefd0f6-ffec-4464-b477-b79ce6dfd6cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.welcome_settings
+    - field.field.config_pages.welcome_settings.field_background_opacity
+    - field.field.config_pages.welcome_settings.field_map_background
+    - field.field.config_pages.welcome_settings.field_welcome_body
+    - field.field.config_pages.welcome_settings.field_welcome_title
+  module:
+    - text
+id: config_pages.welcome_settings.default
+targetEntityType: config_pages
+bundle: welcome_settings
+mode: default
+content:
+  field_background_opacity:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_map_background:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_welcome_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_welcome_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

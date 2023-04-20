@@ -1,0 +1,80 @@
+uuid: 96cea504-361b-4255-844a-4de9154e08c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.marker.field_description
+    - field.field.node.marker.field_map
+    - field.field.node.marker.field_marker_icon
+    - field.field.node.marker.field_marker_type
+    - field.field.node.marker.field_position_horizontal
+    - field.field.node.marker.field_position_vertical
+    - node.type.marker
+  module:
+    - text
+    - user
+id: node.marker.default
+targetEntityType: node
+bundle: marker
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_map:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_marker_icon:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_marker_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_position_horizontal:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_position_vertical:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

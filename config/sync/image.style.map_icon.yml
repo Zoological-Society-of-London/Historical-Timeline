@@ -1,0 +1,20 @@
+uuid: 7c599cdb-5564-498e-a629-47fb029d6640
+langcode: en
+status: true
+dependencies:
+  module:
+    - tinypng
+third_party_settings:
+  tinypng:
+    tinypng_compress: 1
+name: map_icon
+label: 'Map Icon (200 x 200)'
+effects:
+  a2b5ab64-3bff-4b71-80c9-8c84968d71ff:
+    uuid: a2b5ab64-3bff-4b71-80c9-8c84968d71ff
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 200
+      height: 200
+      anchor: center-center

@@ -1,0 +1,64 @@
+uuid: 797aa828-aedd-4602-b050-04a45cb505c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.theme.field_description
+    - field.field.node.theme.field_markers
+    - field.field.node.theme.field_short_description
+    - field.field.node.theme.field_theme_image
+    - field.field.node.theme.field_theme_quiz
+    - node.type.theme
+  module:
+    - text
+    - user
+id: node.theme.default
+targetEntityType: node
+bundle: theme
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_markers:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_short_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_theme_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_theme_quiz:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

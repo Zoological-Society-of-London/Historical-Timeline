@@ -1,0 +1,23 @@
+uuid: e9e28166-3cbb-4889-87d9-ee4276797fca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_is_correct
+    - paragraphs.paragraphs_type.answer
+id: paragraph.answer.field_is_correct
+field_name: field_is_correct
+entity_type: paragraph
+bundle: answer
+label: 'Is Correct?'
+description: 'Tick if this answer option triggers a correct answer'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

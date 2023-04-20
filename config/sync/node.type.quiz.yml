@@ -1,0 +1,17 @@
+uuid: fc5f483d-2f94-42c8-92c3-b3b67c94ebcd
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Quiz
+type: quiz
+description: 'A quiz to attach to a theme.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

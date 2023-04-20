@@ -1,0 +1,26 @@
+uuid: 5b0980ff-45d2-49e9-8b3e-3b406763c3e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.map.field_description
+    - field.field.node.map.field_map_image
+    - field.field.node.map.field_year
+    - node.type.map
+  module:
+    - user
+id: node.map.teaser
+targetEntityType: node
+bundle: map
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_description: true
+  field_map_image: true
+  field_year: true

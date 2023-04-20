@@ -1,0 +1,29 @@
+uuid: 6cea3c98-d434-4919-b575-ed7490ec3d29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_marker_type
+    - node.type.marker
+    - taxonomy.vocabulary.marker_type
+id: node.marker.field_marker_type
+field_name: field_marker_type
+entity_type: node
+bundle: marker
+label: 'Marker Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      marker_type: marker_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

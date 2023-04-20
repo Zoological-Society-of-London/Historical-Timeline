@@ -1,0 +1,5 @@
+name: Historical Timeline
+type: module
+description: Self contained module to run and maintain the ZSL Historical Timeline project.
+package: Historical Timeline
+core_version_requirement: ^9 || ^10

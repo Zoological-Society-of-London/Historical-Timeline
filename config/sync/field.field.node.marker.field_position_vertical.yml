@@ -1,0 +1,25 @@
+uuid: ab1d178b-9215-4d99-ae98-b9d1ac516d83
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_position_vertical
+    - node.type.marker
+id: node.marker.field_position_vertical
+field_name: field_position_vertical
+entity_type: node
+bundle: marker
+label: 'Position vertical'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: !!float 50
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

@@ -1,0 +1,85 @@
+<div>
+	<h2 class="font32-27 quiztitle">{{quiz.title.value}}</h2>
+
+	<form id="quiz-form">
+
+		<div id="quiz-description" class="question-wrapper">
+
+			<p>{{drupal_field('field_description', 'node', quiz.id)}}</p>
+
+			<button class="quizbutton start-quiz-button">Start!</button>
+
+		</div>
+
+		{% for question in quiz.field_questions_and_answers %}
+
+			{% set question_number = loop.index %}
+
+			<div class="question-wrapper">
+
+				<strong>
+					{{drupal_field('field_question', 'paragraph', question.entity.id.value)}}
+				</strong>
+
+				{# Two versions of the answers, one as input, one with answers #}
+				<div class="answers-with-input">
+
+					{% for answer in question.entity.field_answers %}
+
+						<div class="answer-wrapper" >
+							<input id="question{{loop.index}}" name="{{question_number}}" type="radio" value={{answer.entity.field_is_correct.value}}>
+							<label for="question{{loop.index}}">{{answer.entity.field_label.value}}</label>
+						</div>
+
+					{% endfor %}
+					<button class="quizbutton quiz-reveal-button" data-question-number="{{question_number}}" >Check Answer</button>
+
+				</div>
+
+				<div class="answers-with-highlighting" style="display:none">
+
+					{% for answer in question.entity.field_answers %}
+
+						{% set this_answer_is = 'incorrect' %}
+						
+						{% if answer.entity.field_is_correct.value == "1" %}
+							{% set this_answer_is = "correct" %}
+						{% endif %}
+
+						<div class="answer-wrapper-show {{this_answer_is}}">
+							<label for="question{{loop.index}}">{{answer.entity.field_label.value}}
+							{# {% if answer.entity.field_is_correct.value == "1" %}
+								✔️
+							{% else %}
+							 ❌
+							{% endif %} #}
+							
+							</label>
+						</div>
+
+					{% endfor %}
+
+					{# disable previous as now revealing answers #}
+					{# {% if not loop.first %}
+						<button class="quizbutton quiz-previous-button">Previous Question</button>
+					{% endif %} #}
+
+
+					{% if not loop.last %}
+						<button class="quizbutton quiz-next-button">Next Question</button>
+					{% endif %}
+
+					{% if loop.last %}
+						<button id="check-quiz-answers" class="quizbutton">How did you do?</button>
+					{% endif %}
+
+				</div>
+
+
+			</div>
+
+		{% endfor %}
+
+
+	</form>
+</div>

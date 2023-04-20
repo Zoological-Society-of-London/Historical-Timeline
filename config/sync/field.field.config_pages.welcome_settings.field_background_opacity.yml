@@ -1,0 +1,25 @@
+uuid: 68c8a6d1-635f-4c2d-a5ca-5add27ea5d6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.welcome_settings
+    - field.storage.config_pages.field_background_opacity
+id: config_pages.welcome_settings.field_background_opacity
+field_name: field_background_opacity
+entity_type: config_pages
+bundle: welcome_settings
+label: 'Background Opacity'
+description: 'A value between 0(transparent) and 1 (fully visible)'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0.5
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 1
+  prefix: ''
+  suffix: ''
+field_type: float

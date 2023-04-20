@@ -1,0 +1,14 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      dist/main.css: {}  
+global-scripts:
+  version: 1.x
+  js: 
+    dist/main.js: {} 
+  dependencies:
+    - core/jquery
+    - core/drupal.dialog.ajax
+    - core/drupal.ajax
+    - core/drupal

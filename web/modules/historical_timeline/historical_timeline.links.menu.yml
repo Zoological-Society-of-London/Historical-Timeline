@@ -1,0 +1,6 @@
+historical_timeline.settings_form:
+  title: 'Historical Timeline'
+  description: 'Configure Historical Timeline.'
+  parent: system.admin_config_system
+  route_name: historical_timeline.settings_form
+  weight: 10

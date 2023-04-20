@@ -1,0 +1,4 @@
+administer historical_timeline configuration:
+  title: 'Administer historical_timeline configuration'
+  description: 'Optional description.'
+  restrict access: true

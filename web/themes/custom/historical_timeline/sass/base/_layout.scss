@@ -1,0 +1,165 @@
+.theme-info-image {
+    margin: 0 0 1.5rem 0;
+    border-radius: 15px;
+}
+
+.map-title,
+.theme-title--current {
+    margin-top: 0;
+}
+
+.theme-info-buttons-wrapper {
+    display: grid;
+    gap: 0.5rem;
+    grid-auto-columns: max-content;
+}
+
+.content-nav-buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 390px) {
+    .theme-info-buttons-wrapper {
+        grid-auto-flow: column;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .theme-info-image {
+        margin-top: 25px;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .theme-info-image {
+        width: 330px;
+        float: left;
+        margin: 0 1.5rem 0 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .tingle-modal-box__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .breadcrumbs {
+        float: left;
+        width: calc(100% - 4.5rem);
+    }
+
+    .sidebar h2 {
+        clear: both;
+        padding: 1.5rem 0 0;
+        text-align: left;
+        margin-bottom: 0;
+    }
+}
+
+// Full page videos
+
+.sidebar iframe {
+    width: 100%;
+    min-height: 400px;
+}
+
+// Modal buttons for muting and other things
+
+.settings-button {
+    background-color: transparent;
+    border: solid black 1px;
+    border-radius: 1em;
+    width: 1em;
+    height: 1em;
+    padding: 1em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2em;
+    font-size: 0.7em;
+
+    &:hover {
+
+        color: $gecko;
+        border-color: $gecko;
+
+    }
+}
+
+.tingle-modal-box__footer {
+    background: transparent;
+    position: fixed;
+    top: -1rem;
+    right: -1rem;
+}
+
+.fa-volume-xmark {
+    display: none;
+}
+
+.fa-volume {
+    display: inline-flex;
+}
+
+.muted .fa-volume {
+
+    display: none;
+
+}
+
+.muted .fa-volume-xmark {
+
+    display: inline-flex;
+
+}
+
+.zsl-map-control-button {
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 2.5rem;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    right: 0.8rem;
+    font-size: 1.7rem;
+    color: #008c46;
+    z-index: 4;
+    align-items: center;
+
+    * {
+        display: block;
+        text-align: center;
+    }
+
+}
+
+#toggleTime {
+    bottom: 5.5rem;
+}
+#toggleFullScreen {
+    bottom: 1.75rem;
+}
+
+@include for-tablet-landscape-up {
+    .zsl-map-control-button {
+        left: 0.8rem;
+        right: unset;
+    }
+
+    #toggleTime {
+        top: 5rem;
+        bottom: unset;
+    }
+    
+    #toggleFullScreen {
+        top: 8.5rem;
+        bottom: unset;
+    }
+}

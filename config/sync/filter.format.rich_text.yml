@@ -1,0 +1,41 @@
+uuid: b88b5a2d-eba9-4d2d-8cee-f9d329fe4a71
+langcode: en
+status: true
+dependencies:
+  module:
+    - editor
+    - media
+name: 'Rich Text'
+format: rich_text
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<br> <p> <h3> <h4> <strong> <em> <u> <blockquote> <a href> <ul> <ol reversed start> <li> <hr> <img src alt height width data-entity-uuid data-entity-type data-align> <drupal-media data-entity-type data-entity-uuid alt data-align>'
+      filter_html_help: true
+      filter_html_nofollow: false
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_view_modes: {  }
+      allowed_media_types: {  }
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: true
+    weight: 0
+    settings: {  }

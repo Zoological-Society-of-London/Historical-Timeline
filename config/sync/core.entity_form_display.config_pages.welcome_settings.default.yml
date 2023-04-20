@@ -1,0 +1,83 @@
+uuid: 8bf92416-f1e8-4118-9819-41bcd1e0066f
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.welcome_settings
+    - field.field.config_pages.welcome_settings.field_background_opacity
+    - field.field.config_pages.welcome_settings.field_map_background
+    - field.field.config_pages.welcome_settings.field_welcome_body
+    - field.field.config_pages.welcome_settings.field_welcome_title
+  module:
+    - field_group
+    - media_library
+    - text
+third_party_settings:
+  field_group:
+    group_welcome_settings:
+      children:
+        - field_welcome_title
+        - field_welcome_body
+      label: 'Welcome Settings'
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        description: ''
+        required_fields: true
+    group_map_settings:
+      children:
+        - field_map_background
+        - field_background_opacity
+      label: 'Map Settings'
+      region: content
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        description: ''
+        required_fields: true
+id: config_pages.welcome_settings.default
+targetEntityType: config_pages
+bundle: welcome_settings
+mode: default
+content:
+  field_background_opacity:
+    type: number
+    weight: 5
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_map_background:
+    type: media_library_widget
+    weight: 4
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_welcome_body:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_welcome_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  label: true

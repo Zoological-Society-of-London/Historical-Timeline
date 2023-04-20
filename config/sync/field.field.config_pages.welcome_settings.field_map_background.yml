@@ -1,0 +1,29 @@
+uuid: 6c404e6d-fad9-4ca2-85bf-323f95994b09
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.welcome_settings
+    - field.storage.config_pages.field_map_background
+    - media.type.image
+id: config_pages.welcome_settings.field_map_background
+field_name: field_map_background
+entity_type: config_pages
+bundle: welcome_settings
+label: 'Map Background'
+description: 'This is the image that fills behind the maps'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

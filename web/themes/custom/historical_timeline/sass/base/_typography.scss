@@ -1,0 +1,207 @@
+// General typography rules
+
+:root{
+  font: 16px/1 Arial, Helvetica, sans-serif;
+  font-family: proxima-soft, sans-serif;
+}
+
+body, .body-copy  {
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: currentColor;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  // font-stretch: condensed;
+  font-weight: normal;
+}
+
+h1, .font60-50 {
+  margin-top: 0.27em;
+  margin-bottom: 0.383em;
+  font-size: 3.125rem;
+  line-height: 1.1;
+  @include for-tablet-landscape-up {
+    font-size: 3.75rem;
+  }
+}
+  
+.huge, .font80-50 {
+  margin-top: 0.138em; 
+  margin-bottom: 0.5em;
+  font-size: 3.125rem;
+  @include for-tablet-landscape-up {
+    font-size: 5rem;
+  }
+}
+
+h2, .font60-40 {
+  margin-top: 0.15em;
+  margin-bottom: 0.383em;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  @include for-tablet-landscape-up {
+      font-size: 3.75rem;
+      letter-spacing: normal;
+    }
+  }
+    
+h3, .font40-30{
+  margin-top: 0.55em;
+  margin-bottom: 0.45em;
+  font-size: 1.875rem;
+  line-height: 1.13;
+  @include for-tablet-landscape-up {
+    font-size: 2.5rem;
+  }
+}
+
+.font32-27 {
+  font-size: 1.675rem;
+  @include for-tablet-landscape-up {
+    font-size: 2rem;
+  }
+}
+
+h4, .font24 {
+  margin-top: 0.709em;
+  margin-bottom: 0.625em;
+  font-size: 1.5rem;
+  line-height: 1.21;
+  @include for-tablet-landscape-up {
+    line-height: normal;
+  }
+}
+
+.font-20 {
+  font-size: 1.25rem;
+}
+
+.font16 {
+  font-size: 1rem;
+}
+
+.font15 {
+  font-size: 0.938rem;
+}
+
+.font-14 {
+  font-size: 0.875rem;
+}
+
+.font-12 {
+  font-size: 0.75rem;
+}
+
+
+.font-normal {
+  font-weight: $normal;
+}
+
+.font-w300 {
+  font-weight: 300;
+}
+
+.font-w400 {
+  font-weight: 400;
+}
+
+.font-w500 {
+  font-weight: 500;
+}
+
+.font-w600 {
+  font-weight: 600;
+}
+
+
+i, em, .latin {
+  font-style: italic;
+}
+
+b, strong, .bold {
+  font-weight: 600;
+}
+
+.caption, figcaption, cite, caption {
+  font-weight: 100;
+  font-size: 0.875rem;
+  color: $grey;
+}
+
+a {
+  // text-decoration: none;
+  color: inherit;
+}
+
+
+// Helpers
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+
+
+// Colours
+.color-white {
+  color: $white;
+}
+.color-blue {
+  color: $blue;
+}
+.color-grey-dark {
+  color: $grey70;
+}
+.color-grey {
+  color: $grey;
+}
+.color-red {
+  color: $red;
+}
+
+
+// Features -- Navigation
+
+.breadcrumbs {
+  font-weight: 600;
+  text-align: center;
+}
+
+
+p {
+  line-height: 1.3;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.octophin-link {
+  color: #d622b1 !important;
+}

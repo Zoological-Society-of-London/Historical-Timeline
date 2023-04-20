@@ -1,0 +1,17 @@
+uuid: 8ba78054-be1e-40bf-9cc5-734a7bd0c3f4
+langcode: en
+status: true
+dependencies: {  }
+id: welcome_settings
+label: 'Timeline Settings'
+token: false
+context:
+  show_warning: true
+  group:
+    language: false
+  fallback:
+    language: ''
+menu:
+  path: ''
+  weight: 0
+  description: ''

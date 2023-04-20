@@ -1,0 +1,80 @@
+uuid: c7cfdc10-97e2-4cef-80b2-f151a31c121b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.theme.field_description
+    - field.field.node.theme.field_markers
+    - field.field.node.theme.field_short_description
+    - field.field.node.theme.field_theme_image
+    - field.field.node.theme.field_theme_quiz
+    - node.type.theme
+  module:
+    - media_library
+    - select2
+    - text
+id: node.theme.default
+targetEntityType: node
+bundle: theme
+mode: default
+content:
+  field_description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_markers:
+    type: select2_entity_reference
+    weight: 3
+    region: content
+    settings:
+      width: 100%
+      autocomplete: true
+      match_operator: CONTAINS
+      match_limit: 10
+    third_party_settings: {  }
+  field_short_description:
+    type: string_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_theme_image:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_theme_quiz:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

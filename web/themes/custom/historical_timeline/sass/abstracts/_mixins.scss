@@ -1,0 +1,84 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin reset--formEl {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+@mixin reset--button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin uppercase {
+  text-transform: uppercase;
+}
+
+@mixin underline {
+  text-decoration: underline;
+}
+
+@mixin normal {
+  font-weight: $normal; //400
+}
+
+@mixin boldish {
+  font-weight: $boldish; //600
+}
+
+@mixin bold {
+  font-weight: $bold; //700
+}
+
+@mixin italic {
+  font-style: italic;
+}
+
+@mixin align--left {
+  text-align: left;
+}
+
+@mixin align--center {
+  text-align: center;
+}
+
+@mixin align--right {
+  text-align: right;
+}
+
+@mixin circle($size: 100px) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: 0 0 $size;
+}
+
+@mixin text($fontfamily, $fontsize, $lineheight) {
+  font-family: $fontfamily;
+  font-size: $fontsize;
+  line-height: $lineheight;
+}
+
+@mixin basic-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}

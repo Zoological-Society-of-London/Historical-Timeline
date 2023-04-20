@@ -1,0 +1,6 @@
+composer install
+npm install
+vendor/bin/drush config:import
+vendor/bin/drush updatedb
+npx webpack
+vendor/bin/drush cr

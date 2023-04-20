@@ -1,0 +1,45 @@
+uuid: c88ce3b2-1764-4bf6-bea0-d60521174788
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_effects
+    - tinypng
+third_party_settings:
+  tinypng:
+    tinypng_compress: 1
+name: map_image
+label: 'Map Image'
+effects:
+  1b751479-85d3-4257-bc76-6ff560eeaaee:
+    uuid: 1b751479-85d3-4257-bc76-6ff560eeaaee
+    id: image_effects_set_canvas
+    weight: -8
+    data:
+      canvas_size: exact
+      canvas_color: ''
+      exact:
+        width: '2650'
+        height: '1611'
+        placement: center-center
+        x_offset: 0
+        y_offset: 0
+      relative:
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+  de979527-535b-4db4-b347-45229762c869:
+    uuid: de979527-535b-4db4-b347-45229762c869
+    id: image_scale
+    weight: -9
+    data:
+      width: 2650
+      height: 1161
+      upscale: true
+  da3e2ed8-239d-49c2-9229-bb6cff6ea397:
+    uuid: da3e2ed8-239d-49c2-9229-bb6cff6ea397
+    id: image_convert
+    weight: -10
+    data:
+      extension: png

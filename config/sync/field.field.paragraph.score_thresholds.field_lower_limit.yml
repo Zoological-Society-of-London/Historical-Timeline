@@ -1,0 +1,25 @@
+uuid: eaad059d-fc69-4a2e-8435-f099ee00287f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_lower_limit
+    - paragraphs.paragraphs_type.score_thresholds
+id: paragraph.score_thresholds.field_lower_limit
+field_name: field_lower_limit
+entity_type: paragraph
+bundle: score_thresholds
+label: 'Lower Limit'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

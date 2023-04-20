@@ -1,0 +1,10 @@
+uuid: 39435cb3-2eb0-4c92-83f9-4579b3f70db9
+langcode: en
+status: true
+dependencies: {  }
+id: score_thresholds
+label: 'Score Thresholds'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

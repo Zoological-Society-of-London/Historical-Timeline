@@ -1,0 +1,37 @@
+uuid: 3849da3b-a5ca-4e7d-b8c4-ef0d235dbf8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_score_thresholds
+    - node.type.quiz
+    - paragraphs.paragraphs_type.score_thresholds
+  module:
+    - entity_reference_revisions
+id: node.quiz.field_score_thresholds
+field_name: field_score_thresholds
+entity_type: node
+bundle: quiz
+label: 'Score Thresholds'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      score_thresholds: score_thresholds
+    negate: 0
+    target_bundles_drag_drop:
+      answer:
+        weight: 4
+        enabled: false
+      quiz_item:
+        weight: 5
+        enabled: false
+      score_thresholds:
+        weight: 6
+        enabled: true
+field_type: entity_reference_revisions

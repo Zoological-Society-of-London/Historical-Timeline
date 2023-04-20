@@ -1,0 +1,8 @@
+uuid: b32afff2-1c19-4611-8f9d-768971dd24ce
+langcode: en
+status: true
+dependencies: {  }
+name: 'Marker Type'
+vid: marker_type
+description: ''
+weight: 0
